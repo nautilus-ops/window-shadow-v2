@@ -1,16 +1,16 @@
 # window shadows v2
 
-本项目是 [window-shadows](https://github.com/tauri-apps/window-shadows) 这个crate在 tauri v2 上的平替方案。
+This crate is a drop-in alternative to [window-shadows](https://github.com/tauri-apps/window-shadows) for Tauri v2.
 
-由于在tauri v2已经支持 禁用和启用 阴影，因此旧版本的 window-shadows 已经停止维护。
+Since Tauri v2 can natively enable and disable shadows, the original window-shadows crate is no longer maintained.
 
-## Why we need it?
+## Why is this needed?
 
-由于我的应用使用了自定义Titlebar，在Windows 10上开启shadows后会出现以下的bug。
+My app uses a custom title bar. When shadows are enabled on Windows 10, the top edge shows the following bug:
 
 ![img.png](docs/images/img.png)
 
-最上方的shadow不起作用，会有一条白色的边，因此我尝试了使用 window-shadows 这个库中的方法添加了原生阴影，并成功解决了我的问题
+The top shadow fails to render, leaving a white strip. Applying the native shadow approach from the original window-shadows crate fixes the issue.
 
 ## Usage
 

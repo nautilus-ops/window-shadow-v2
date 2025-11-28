@@ -4,6 +4,11 @@ description = "Add native shadows to your windows for tauri v2."
 authors = [ "CeerDecy" ]
 version = "0.1.0"
 edition = "2024"
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+repository = "https://github.com/nautilus-ops/window-shadow-v2"
+keywords = [ "shadows", "windowing", "gui" ]
+categories = [ "gui" ]
 
 [dependencies]
 tauri = { version = "2", features = ["unstable"] }

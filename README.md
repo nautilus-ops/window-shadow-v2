@@ -1,16 +1,16 @@
 # window shadows v2
 
-This crate is a drop-in alternative to [window-shadows](https://github.com/tauri-apps/window-shadows) for Tauri v2.
+This crate is a Tauri v2-ready alternative to [window-shadows](https://github.com/tauri-apps/window-shadows).
 
-Since Tauri v2 can natively enable and disable shadows, the original window-shadows crate is no longer maintained.
+Since Tauri v2 already supports toggling window shadows, the original window-shadows crate stopped receiving updates. However, this crate continues to provide the native shadow implementation that some apps still need.
 
-## Why is this needed?
+## Why we need it?
 
-My app uses a custom title bar. When shadows are enabled on Windows 10, the top edge shows the following bug:
+My app ships with a custom title bar. On Windows 10, enabling shadows results in the following bug:
 
 ![img.png](docs/images/img.png)
 
-The top shadow fails to render, leaving a white strip. Applying the native shadow approach from the original window-shadows crate fixes the issue.
+The top shadow becomes inactive and leaves a white line. By porting the native shadow implementation from window-shadows and adapting it for Tauri v2, the issue is resolved.
 
 ## Usage
 

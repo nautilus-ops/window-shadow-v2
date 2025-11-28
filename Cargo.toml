@@ -1,6 +1,6 @@
 [package]
-name = "window-shadow-v2"
-description = "Add native shadows to your windows."
+name = "window-shadows-v2"
+description = "Add native shadows to your windows for tauri v2."
 authors = [ "CeerDecy" ]
 version = "0.1.0"
 edition = "2024"

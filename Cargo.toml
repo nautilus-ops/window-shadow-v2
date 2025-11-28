@@ -2,7 +2,7 @@
 name = "window-shadows-v2"
 description = "Add native shadows to your windows for tauri v2."
 authors = [ "CeerDecy" ]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "Apache-2.0 OR MIT"
 readme = "README.md"

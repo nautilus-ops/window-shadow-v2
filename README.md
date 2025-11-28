@@ -13,6 +13,9 @@ My app ships with a custom title bar. On Windows 10, enabling shadows results in
 The top shadow becomes inactive and leaves a white line. By porting the native shadow implementation from window-shadows and adapting it for Tauri v2, the issue is resolved.
 
 ## Usage
+```bash
+cargo add window-shadows-v2
+```
 
 ```rust
 .setup(|app| {
